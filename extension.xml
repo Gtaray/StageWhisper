@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root version="3.3" release="1.0">
+	<announcement text="Loaded Stage Whisper v1.0.0" icon="stage_whisper" font="emotefont" />
+	<properties>
+		<name>Feature: Stage Whisper</name>
+		<version>1.0.0</version>
+		<author>Saagael</author>
+		<description>Enhanced whisper features</description>
+		<loadorder>100</loadorder>
+	</properties>
+	<base>
+		<includefile source="utility/whispers.xml" />
+
+		<script name="StageWhisper" file="scripts/stage_whisper.lua" />
+
+		<icon name="stage_whisper" file="stage_whisper_icon.png" />
+
+		<!-- Strings -->
+		<string name="library_recordtype_label_whispers">Whispers</string>
+		<string name="label_gm_alias">GM Alias</string>
+
+		<string name="default_gm_alias">the GM</string>
+		<string name="msg_default1">[S] whispered [R]</string>
+		<string name="msg_default2">[S] and [R] are whispering</string>
+
+		<string name="tooltip_gm_alias">What the GM is referred to as for whisper notifications.</string>
+		<string name="tooltip_msg">Whisper notification text.\nUse '[S] to refer to the sender of the message.\nUse '[R]' to refer to the recipient of the message.</string>
+	</base>
+</root>
